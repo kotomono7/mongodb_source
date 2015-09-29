@@ -8,8 +8,8 @@ PHP >= 5, pecl mongo (http://php.net/mongo)
 
 ## Installation
 To install the driver for use in a single application:<br>
-1. Place file __"dbo_mongodb.php"__ into directoy _"cakephp/cake/libs/model/datasources/dbo"_<br>
-2. Place file __"schemaless.php"__ and __"sql_sompatible.php"__ into directoy _"cakephp/cake/libs/model/behaviors"_
+1. Place file __"dbo_mongodb.php"__ into directory _"cakephp/cake/libs/model/datasources/dbo"_<br>
+2. Place file __"schemaless.php"__ and __"sql_sompatible.php"__ into directory _"cakephp/cake/libs/model/behaviors"_
 
 ## Configuration
 ```php
