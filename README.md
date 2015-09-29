@@ -1,7 +1,7 @@
 # MongoDB Datasource for CakePHP 1.2.x
 
 ## About
-This is a modified MongoDD Datasource originally from Yasushi Ichikawa (ichikaway) fro CakePHP 1.2.x
+This is a modified MongoDB Datasource originally from Yasushi Ichikawa (ichikaway) for CakePHP 1.2.x
 
 ## Requirements
 PHP >= 5, pecl mongo (http://php.net/mongo)
@@ -9,7 +9,7 @@ PHP >= 5, pecl mongo (http://php.net/mongo)
 ## Installation
 To install the driver for use in a single application:<br>
 1. Place file __"dbo_mongodb.php"__ into directoy _"cakephp/cake/libs/model/datasources/dbo"_<br>
-2. Place files __"schemaless.php"__ and __"sql_sompatible.php"__ into directoy _"cakephp/cake/libs/model/behaviors"_
+2. Place file __"schemaless.php"__ and __"sql_sompatible.php"__ into directoy _"cakephp/cake/libs/model/behaviors"_
 
 ## Configuration
 ```php
@@ -26,7 +26,7 @@ class DATABASE_CONFIG {
 		'driver' => 'mongodb',
 		'database' => 'sample',
 		'host' => 'localhost',
-        	'port' => 27017,
+    'port' => 27017,
 	);
 }
 ```
