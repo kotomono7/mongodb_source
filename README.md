@@ -26,7 +26,7 @@ class DATABASE_CONFIG {
 		'driver' => 'mongodb',
 		'database' => 'sample',
 		'host' => 'localhost',
-    'port' => 27017,
+    	'port' => 27017,
 	);
 }
 ```
