@@ -29,5 +29,6 @@ class DATABASE_CONFIG {
     	'port' => 27017,
 	);
 }
+?>
 ```
 Special thanks to Yasushi Ichikawa (ichikaway)
