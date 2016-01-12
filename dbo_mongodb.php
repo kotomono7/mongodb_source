@@ -5,14 +5,15 @@
  * This datasource uses Pecl Mongo (http://php.net/mongo)
  * and is thus dependent on PHP 5.0 and greater.
  *
- * Original implementation by ichikaway(Yasushi Ichikawa) http://github.com/ichikaway/
- * Modified for CakePHP 1.2.x by umamscarlet (Muhammad Khoirul Umam) http://github.com/umamscarlet/
+ * Original implementation by ichikaway (Yasushi Ichikawa) http://github.com/ichikaway/
+ * Modification for CakePHP 1.2 compatibility by umamscarlet (Muhammad Khoirul Umam) http://github.com/umamscarlet/
  *
  * Reference:
  *	Nate Abele's lithium mongoDB datasource (http://li3.rad-dev.org/)
  *	Joél Perras' divan(http://github.com/jperras/divan/)
  *
  * Copyright 2010, Yasushi Ichikawa http://github.com/ichikaway/
+ * Modified on August, 2015. Muhammad Khoirul Umam http://github.com/umamscarlet/
  *
  * Contributors: Predominant, Jrbasso, tkyk, AD7six
  *
@@ -216,7 +217,8 @@ class DboMongodb extends DboSource {
 				if (!empty($this->config['login']) && $this->_driverVersion < '1.2.0') {
 					$return = $this->_db->authenticate($this->config['login'], $this->config['password']);
 					if (!$return || !$return['ok']) {
-						trigger_error('MongodbSource::connect ' . $return['errmsg']);
+						trigger_error('DboMongodb::connect ' . $return['errmsg']);
+						//trigger_error('MongodbSource::connect ' . $return['errmsg']);
 						return false;
 					}
 				}
